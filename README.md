@@ -20,6 +20,8 @@ platforms:
   image: docker.io/havlasme/debian11-systemd-ansible:latest
   pre_build_image: true
   command: '/lib/systemd/systemd'
+  volumes:
+  - /sys/fs/cgroup:/sys/fs/cgroup:ro
 ```
 
 How to Build
