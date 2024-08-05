@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       sudo systemd systemd-sysv \
+       sudo dbus systemd systemd-sysv \
        build-essential wget libffi-dev libssl-dev libyaml-dev locales procps iproute2 \
        python3-pip python3-dev python3-setuptools python3-wheel python3-yaml python3-apt \
     && rm -rf /var/lib/apt/lists/* \
