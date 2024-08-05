@@ -8,10 +8,11 @@ RUN apt-get update \
        sudo dbus systemd systemd-sysv \
        build-essential wget libffi-dev libssl-dev libyaml-dev locales procps iproute2 \
        python3-pip python3-dev python3-setuptools python3-wheel python3-yaml python3-apt \
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/doc /usr/share/man \
-    && rm -f /lib/systemd/system/multi-user.target.wants/getty.target \
-    && apt-get clean
+    && rm -f /lib/systemd/system/systemd*udev* \
+    && rm -f /lib/systemd/system/getty.target
 
 RUN pip3 install --upgrade pip \
     && pip3 install ansible cryptography
