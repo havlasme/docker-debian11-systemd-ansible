@@ -1,5 +1,5 @@
-Debian 11 "bullseye" Ansible Molecule Test Environment
-======================================================
+Debian 11 "bullseye" Ansible Molecule Testing Image
+===================================================
 
 [![CI][gitlabci-image]][gitlabci-link]
 [![Apache-2.0 license][dockerhub-image]][dockerhub-link]
