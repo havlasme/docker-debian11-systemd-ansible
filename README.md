@@ -1,18 +1,18 @@
-Debian 11 "bullseye" Ansible Molecule Test Image
-================================================
+Debian 11 "bullseye" Ansible Molecule Test Environment
+======================================================
 
 [![CI][gitlabci-image]][gitlabci-link]
 [![Apache-2.0 license][dockerhub-image]][dockerhub-link]
 [![Apache-2.0 license][license-image]][license-link]
 
-Debian 11 "bullseye" based image intended for [Ansible](https://www.ansible.com/) role testing using [Molecule](https://ansible.readthedocs.io/projects/molecule/).
+[Debian 11 "bullseye"](https://hub.docker.com/_/debian) based image intended for testing [Ansible](https://www.ansible.com/) roles using [Molecule](https://ansible.readthedocs.io/projects/molecule/).
 
-This image is built automatically on each commit to the `main` branch, and published on the [Docker Hub](https://hub.docker.com/) as [`havlasme/debian11-systemd-ansible:latest`](https://hub.docker.com/r/havlasme/debian11-systemd-ansible).
+This image is automatically built on each commit to the `main` branch and published on the [Docker Hub](https://hub.docker.com/) as [`havlasme/debian11-systemd-ansible:latest`](https://hub.docker.com/r/havlasme/debian11-systemd-ansible).
 
 How to Use
 ----------
 
-To use this image in Molecule scenario, update the `platforms` section in the `molecule.yml`.
+To use this image in a Molecule scenario, update the `platforms` section in the `molecule.yml`.
 
 ```yaml title="molecule.yml"
 platforms:
@@ -27,7 +27,7 @@ platforms:
 How to Build
 ------------
 
-To build the image locally simply run:
+To build the image locally, simply run:
 
 ```shell
 make build
